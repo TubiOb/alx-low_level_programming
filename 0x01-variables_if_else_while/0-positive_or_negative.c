@@ -18,15 +18,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0) 
 	{
-		printf("%ld is Positive", n);
+		printf("%ld is positive ", n);
 	}
 	else if (n < 0) 
 	{
-		printf("%ld is Negative", n);
+		printf("%ld is negative ", n);
 	}
 	else 
 	{
-		printf("%ld is Zero", n);
+		printf("%ld is zero ", n);
 	}
 	return (0);
 }
