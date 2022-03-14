@@ -2,6 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 #include <string.h>
+#include <iso646.h>
 
 /* function main accepts the value of variable n and prints the last digit of the variable n. 
  * It prints 4 strings which include:
@@ -24,7 +25,7 @@ int main(void)
 	{
 		printf("Last digit of %ld %s %d %s\n", n, "is", lastDigit, "and is greater than 5");
 	}
-	else if ((lastDigit = n % 10 < 6) || (lastDigit = n % 10 != 0))
+	else if ((lastDigit = n % 10) || lastDigit < 6 || lastDigit != 0)
 	{
 		printf("Last digit of %ld %s %d %s\n", n, "is", lastDigit, "and is less than 6 and not 0");
 	}
