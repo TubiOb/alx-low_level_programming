@@ -36,7 +36,7 @@ int _atoi(char *s)
 			f = 1;
 			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
-			f =0;
+			f = 0;
 		}
 		i++;
 	}
@@ -52,18 +52,18 @@ int _atoi(char *s)
  * @argc: number of arguments
  * @argv: array of arguments
  *
- * Return: 0 (Success), 1 (Success)
+ * Return: 0 (Success), or 1 (Success)
  */
 
 int main(int argc, char *argv[])
 {
-	int sum, num, i, j, k:
-
-		sum = 0;
+	int sum, num, i, j, k;
+	
+	sum = 0;
 
 	for (i = 1; i < argc; i++)
 	{
-		for (j =0; argv[i][j] != '\0'; j++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (argv[i][j] > '9' || argv[i][j] < '0')
 			{
