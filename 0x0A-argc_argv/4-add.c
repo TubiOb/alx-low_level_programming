@@ -50,7 +50,7 @@ int _atoi(char *s)
 /**
  * main - adds two positive number
  * @argc: number of arguments
- * @argv: array of arguments
+ * @argv: array of arguents
  *
  * Return: 0 (Success), or 1 (Success)
  */
@@ -58,7 +58,7 @@ int _atoi(char *s)
 int main(int argc, char *argv[])
 {
 	int sum, num, i, j, k;
-	
+
 	sum = 0;
 
 	for (i = 1; i < argc; i++)
