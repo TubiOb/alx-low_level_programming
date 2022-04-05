@@ -8,16 +8,17 @@
  * @size: the size of array to create
  * @c: char to initiate the array c
  *
- * Return: a pointer to the array (Success), NULL (Error)
+ * Return: pointer to the array (Success), NULL (Error)
  */
 
 char *create_array(unsigned int size, char c)
 {
+	char *p;
 	unsigned int i = 0;
-	char c;
 
 	if (size == 0)
 		return (NULL);
+
 	p = (char *) malloc(sizeof(char) * size);
 
 	if (p == NULL)
