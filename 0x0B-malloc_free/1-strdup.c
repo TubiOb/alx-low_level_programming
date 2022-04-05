@@ -1,9 +1,8 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
 
 /**
- * *_strdup - copies the string given as parameter.
+ * *_strdup - copies the string given as parameter
  * @str: string to duplicate
  *
  * Return: pointer to the copied string (Success), NULL (Error)
